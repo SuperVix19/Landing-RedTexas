@@ -1,0 +1,460 @@
+/*********************************MÓVIL*********************************/
+
+html, body {
+    overflow-x: hidden;
+}
+
+
+/*********************************FONTS*********************************/
+
+@font-face{
+    font-family: 'Din-Black';
+    src: url('../fonts/DINPro-Black.woff2') format('woff2'),
+        url('../fonts/DINPro-Black.woff') format('woff');
+    font-style: normal;    
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: 'Din-Bold';
+    src: url('../fonts/DINPro-Bold.woff2') format('woff2'),
+        url('../fonts/DINPro-Bold.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: 'Din-LightItalic';
+    src: url('../fonts/DINPro-LightItalic.woff2') format('woff2'),
+        url('../fonts/DINPro-LightItalic.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: 'Din-Medium';
+    src: url('../fonts/DINPro-Medium.woff2') format('woff2'),
+        url('../fonts/DINPro-Medium.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: 'Northwest';
+    src: url('../fonts/Northwest.woff2') format('woff2'),
+        url('../fonts/Northwest.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/********************************* LANDING - MENU *********************************/
+
+.sin-padding{
+    padding: 0;
+}
+
+.seccion-menu{
+    position: relative;
+    background: url('../img/fondo-10.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.indez{
+    z-index: 1;
+}
+
+.info-menu .menus ul li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.info-menu .menus ul li p{
+    font-family: 'Northwest';
+    font-size: 26px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.info-menu .menus ul li p span a{
+    visibility: hidden;
+    font-family: 'Din-Black';
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid #E1262C;
+    background: #E1262C;
+}
+
+.info-menu .menus ul li:hover p span a{
+    visibility: visible;
+    cursor: pointer;
+}
+
+.seccion-menu .img-toro img{
+    position: absolute;
+    width: 85%;
+    right: 0%;
+    bottom: 0px;
+}
+
+.logo-red img{
+    width: 240px;
+}
+
+.btn-group {
+    border-radius: var(--bs-border-radius);
+    border: 1px solid #E1262C;
+}
+
+.btn-group a{
+    font-family: 'Din-Black';
+    font-size: 15px;
+    color: #000;
+    transition: all .3s linear;
+    text-transform: uppercase;
+}
+
+.btn-group a:hover{
+    background: #E1262C;
+    color: #fff;
+}
+
+.btn.active {
+    background: #E1262C!important;
+    color: #fff!important;
+}
+
+
+/*LIGHTBOX*/
+
+/* .plano .boton-plano{
+    margin: 1rem 3rem 3rem 2rem!important;
+} */
+
+.lightbox{
+    display: none;
+    padding: 2rem 0;    
+}
+
+#cboxContent{
+    padding: 1rem 0!important;
+    width: 500px;
+}
+
+.boton-menus{
+    padding-left: 1rem;
+}
+
+ul li .menues input{
+    visibility: hidden;
+    font-family: 'Din-Black';
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid #E1262C;
+    background: #E1262C;
+}
+
+ul li:hover .menues input{
+    visibility: visible;
+    cursor: pointer;
+}
+
+.boton-menus input{
+    font-family: 'Din-Black';
+    font-size: 15px;
+    color: #000;
+    transition: all .2s linear;
+    text-transform: uppercase;
+    border-radius: var(--bs-border-radius);
+    border: 1px solid #E1262C;
+    background: #E1262C!important;
+    color: #fff!important;
+}
+
+.boton-menus input:hover{
+    background: #E1262C;
+    color: #fff;
+}
+
+
+
+/********************************* RESPONSIVO WEB *********************************/
+
+@media(min-width: 1920px){
+    
+    .logo-red {
+        padding: 5rem 0 1rem 0;
+    }
+
+    .logo-red img {
+        width: 300px;
+    }
+
+    .seccion-menu {
+        height: 120vh;
+    }
+
+    .info-menu .menus ul li p {
+        font-size: 35px;
+    }
+    
+    .info-menu{
+        padding: 5rem 0;
+    }
+    
+    .seccion-menu .img-toro img {
+        position: absolute;
+        width: 85%;
+        right: 0%;
+        bottom: 85px;
+    }
+    
+    .btn-group a {
+        font-size: 25px;
+    }
+
+    ul li .menues input{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1442px){
+
+    .logo-red {
+        padding: 5rem 0 1rem 0;
+    }
+
+    .logo-red img {
+        width: 240px;
+    }
+
+    
+
+    .info-menu{
+        padding: 4rem 0;
+    }
+
+    .info-menu .menus ul li p {
+        font-size: 28px;
+    }
+
+    .info-menu .menus ul li p span a{
+        font-size: 10px;
+    }
+
+    .seccion-menu .img-toro img {
+        position: absolute;
+        width: 95%;
+        right: 0%;
+        bottom: 85px;
+    }
+
+    .btn-group a {
+        font-size: 18px;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+
+    .logo-red {
+        padding: 5rem 0 1rem 0;
+    }
+
+    .logo-red img {
+        width: 240px;
+    }
+
+    .info-menu{
+        padding: 4rem 0;
+    }
+
+    .info-menu .menus ul li p {
+        font-size: 28px;
+    }
+
+    .info-menu .menus ul li p span a{
+        font-size: 10px;
+    }
+
+    .seccion-menu .img-toro img {
+        position: absolute;
+        width: 95%;
+        right: 0%;
+        bottom: 85px;
+    }
+
+    .botones-internas{
+        position: absolute;
+        width: 100%;
+        left: 0%;
+        bottom: 55px;
+    }
+
+    .btn-group a {
+        font-size: 18px;
+    }
+
+    #cboxContent {
+        padding: 10rem 0 !important;
+        width: 500px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+
+    .seccion-menu{
+        height: 143.9vw;
+    }
+
+    .logo-red {
+        padding: 5rem 0 1rem 0;
+    }
+
+    .logo-red img {
+        width: 260px;
+    }
+
+    .info-menu{
+        padding: 4rem 0;
+    }
+
+    .info-menu .menus ul li p {
+        font-size: 25px;
+    }
+
+    .info-menu .menus ul li p span a{
+        font-size: 10px;
+    }
+
+    .seccion-menu .img-toro img {
+        position: absolute;
+        width: 82%;
+        right: 0%;
+        bottom: 50px;
+    }
+
+    .botones-internas{
+        position: absolute;
+        width: 100%;
+        left: 0%;
+        bottom: 35px;
+    }
+
+    .btn-group a {
+        font-size: 18px;
+    }
+
+    #cboxContent {
+        padding: 10rem 0 !important;
+        width: 500px;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 767.65px){
+
+    .seccion-menu{
+        height: 153.8vw;
+    }
+
+    .logo-red {
+        padding: 4rem 0 1rem 0;
+    }
+
+    .logo-red img {
+        width: 260px;
+    }
+
+    .info-menu{
+        padding: 4rem 0;
+    }
+
+    .info-menu .menus ul li p {
+        font-size: 25px;
+    }
+
+    .info-menu .menus ul li p span a{
+        font-size: 10px;
+    }
+
+    .seccion-menu .img-toro img {
+        position: absolute;
+        width: 90%;
+        right: 0%;
+        bottom: 70px;
+    }
+
+    .botones-internas{
+        position: absolute;
+        width: 100%;
+        left: 0%;
+        bottom: 35px;
+    }
+
+    .btn-group a {
+        font-size: 18px;
+    }
+
+}
+
+@media(max-width: 480px){
+
+    .seccion-menu{
+        position: relative;
+        background: url('../img/movil-06.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 216vw;
+    }
+
+    .logo-red {
+        padding: 3rem 0 1rem 0;
+    }
+
+    .logo-red img {
+        width: 190px;
+    }
+
+    .info-menu{
+        padding: 2rem 0;
+    }
+
+    .info-menu .menus ul li p {
+        font-size: 14px;
+    }
+
+    .info-menu .menus ul li p span a{
+        font-size: 6px;
+    }
+
+    .botones-internas{
+        position: absolute;
+        width: 100%;
+        left: 0%;
+        bottom: 35px;
+    }
+
+    .btn-group a {
+        font-size: 15px;
+    }
+
+    ul li .menues input {
+        font-size: 7px;
+    }
+
+}
+
+@media(max-width: 376px){
+
+    .logo-red img{
+        width: 175px;
+    }
+
+}
+

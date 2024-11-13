@@ -1,0 +1,563 @@
+/*********************************MÓVIL*********************************/
+
+html, body {
+    overflow-x: hidden;
+}
+
+
+/*********************************FONTS*********************************/
+
+@font-face{
+    font-family: 'Din-Black';
+    src: url('../fonts/DINPro-Black.woff2') format('woff2'),
+        url('../fonts/DINPro-Black.woff') format('woff');
+    font-style: normal;    
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: 'Din-Bold';
+    src: url('../fonts/DINPro-Bold.woff2') format('woff2'),
+        url('../fonts/DINPro-Bold.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: 'Din-LightItalic';
+    src: url('../fonts/DINPro-LightItalic.woff2') format('woff2'),
+        url('../fonts/DINPro-LightItalic.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: 'Din-Medium';
+    src: url('../fonts/DINPro-Medium.woff2') format('woff2'),
+        url('../fonts/DINPro-Medium.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: 'Northwest';
+    src: url('../fonts/Northwest.woff2') format('woff2'),
+        url('../fonts/Northwest.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/********************************* LANDING - MENU *********************************/
+
+.sin-padding{
+    padding: 0;
+}
+
+.seccion-encuesta{
+    position: relative;
+    background: url('../img/fondo-10.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.logo-red img{
+    width: 225px;
+}
+
+.titulo-encuesta h1 strong{
+    font-family: 'Din-Black';
+    font-size: 28px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.encuesta-info ul{
+    padding-left: 0rem;
+}
+
+.encuesta-info ul li{
+    list-style: none;
+    padding-left: 0rem;
+}
+
+.subtitulo{
+    padding: 1rem 0;
+}
+
+.encuesta-info .subtitulo h2{
+    font-family: 'Din-Medium';
+    font-size: 20px;
+    color: #000;
+}
+
+.encuesta-info label{
+    font-family: 'Din-Medium';
+    font-size: 18px;
+    color: #DB2026;
+}
+
+.encuesta-info .radio span{
+    font-family: 'Din-Medium';
+    font-size: 16px;
+    color: #000;
+}
+
+.encuesta-info .mergeRow-text input, .encuesta-info .mergeRow-email input{
+    background: transparent;
+    color: #000;
+    border: 0;
+    resize: none;
+    outline: none;
+    border-bottom: 2px solid #000;
+    height: 26px;
+    width: 100%;
+}
+
+.encuesta-info .submit_container input{
+    background: transparent;
+    font-family: 'Din-Medium';
+    font-size: 16px;
+    color: #BD3218;
+    text-transform: uppercase;
+    border: 0;
+    transition: all .3s linear;
+}
+
+.encuesta-info .submit_container input:hover{
+    color: #fff;
+}
+
+.encuesta-info .img-estrellas img{
+    position: absolute;
+    width: 320px;
+    right: 10%;
+    top: 145px;
+}
+
+.encuesta-info .img-cacahuates img{
+    position: absolute;
+    width: 650px;
+    right: 0%;
+    top: 250px;
+}
+
+.btn-group {
+    border-radius: var(--bs-border-radius);
+    border: 1px solid #E1262C;
+}
+
+.btn-group a{
+    font-family: 'Din-Black';
+    font-size: 15px;
+    color: #000;
+    transition: all .3s linear;
+    text-transform: uppercase;
+}
+
+.btn-group a:hover{
+    background: #E1262C;
+    color: #fff;
+}
+
+.btn.active {
+    background: #E1262C!important;
+    color: #fff!important;
+}
+
+
+
+/********************************* RESPONSIVO WEB *********************************/
+
+@media(min-width: 1920px){
+
+    .logo-red {
+        padding: 5rem 0 1rem 0;
+    }
+
+    .logo-red img {
+        width: 300px;
+    }
+
+    .encuesta-info{
+        padding: 1rem 0 5rem;
+    }
+
+    .titulo-encuesta h1 strong {
+        font-size: 30px;
+    }
+
+    .encuesta-info .subtitulo h2 {
+        font-size: 25px;
+    }
+
+    .encuesta-info .encuesta-info label{
+        font-size: 25px;
+    }
+
+    .encuesta-info .radio span {
+        font-size: 20px;
+    }
+
+    .encuesta-info .submit_container input {
+        font-size: 25px;
+    }
+
+    .btn-group a {
+        font-size: 20px;
+    }
+
+    .encuesta-info .img-estrellas img {
+        position: absolute;
+        width: 390px;
+        right: 10%;
+        top: 205px;
+    }
+
+    .encuesta-info .img-cacahuates img {
+        position: absolute;
+        width: 790px;
+        right: 0%;
+        top: 322px;
+    }
+    
+}
+
+@media (max-width: 1442px){
+
+    .seccion-encuesta{
+        height: 62.5vw;
+    }
+
+    .logo-red {
+        padding: 5rem 0 1rem 0;
+    }
+
+    .logo-red img {
+        width: 240px;
+    }
+
+    .encuesta-info{
+        padding: 1rem 0 5rem;
+    }
+
+    .titulo-encuesta h1 strong {
+        font-size: 25px;
+    }
+
+    .encuesta-info .subtitulo h2 {
+        font-size: 22px;
+        margin-bottom: 0;
+    }
+
+    .encuesta-info .encuesta-info label {
+        font-size: 18px;
+    }
+
+    .encuesta-info .radio span {
+        font-size: 14px;
+    }
+
+    .encuesta-info .submit_container input {
+        font-size: 20px;
+    }
+
+    .btn-group a {
+        font-size: 16px;
+    }
+
+    .encuesta-info .img-estrellas img {
+        position: absolute;
+        width: 320px;
+        right: 10%;
+        top: 205px;
+    }
+
+    .encuesta-info .img-cacahuates img {
+        position: absolute;
+        width: 600px;
+        right: 0%;
+        top: 310px;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+
+    .seccion-encuesta{
+        height: 133.4vw;
+    }
+
+    .logo-red {
+        padding: 5rem 0 1rem 0;
+    }
+
+    .logo-red img {
+        width: 240px;
+    }
+
+    .encuesta-info{
+        padding: 1rem 2rem 3rem;
+    }
+
+    .titulo-encuesta h1 {
+        text-align: center;
+    }
+
+    .titulo-encuesta h1 strong {
+        font-size: 25px;
+    }
+
+    .subtitulo{
+        padding: 1rem 0 2rem;
+    }
+
+    .encuesta-info .subtitulo h2{
+        font-size: 22px;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .encuesta-info .radio span{
+        font-size: 16px;
+    }
+
+    .encuesta-info label{
+        font-size: 18px;
+    }
+
+    .encuesta-info .submitContainer-3fPnR button {
+        font-size: 22px;
+    }
+
+    .btn-group a {
+        font-size: 15px;
+    }
+
+    .encuesta-info .img-estrellas img {
+        position: static;
+        width: 300px;
+        right: 10%;
+        top: 205px;
+    }
+
+    .encuesta-info .img-cacahuates img {
+        position: static;
+        width: 520px;
+        right: 0%;
+        top: 310px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+
+    .seccion-encuesta{
+        height: 143.9vw;
+    }
+
+    .logo-red {
+        padding: 3rem 0 2rem 0;
+    }
+
+    .logo-red img {
+        width: 220px;
+    }
+
+    .encuesta-info{
+        padding: 1rem 2rem 3rem;
+    }
+
+    .titulo-encuesta h1 {
+        text-align: center;
+    }
+
+    .titulo-encuesta h1 strong {
+        font-size: 25px;
+    }
+
+    .subtitulo{
+        padding: 1rem 0 2rem;
+    }
+
+    .encuesta-info .subtitulo h2 {
+        font-size: 22px;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .encuesta-info .radio span {
+        font-size: 16px;
+    }
+
+    .encuesta-info label {
+        font-size: 18px;
+    }
+
+    .encuesta-info .submitContainer-3fPnR button {
+        font-size: 20px;
+    }
+
+    .btn-group a {
+        font-size: 15px;
+    }
+
+    .encuesta-info .img-estrellas img {
+        position: static;
+        width: 170px;
+    }
+
+    .encuesta-info .img-cacahuates img {
+        position: static;
+        width: 325px;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 767.65px){
+
+    .seccion-encuesta{
+        height: 153.8vw;
+    }
+
+    .logo-red {
+        padding: 3rem 0 2rem 0;
+    }
+
+    .logo-red img {
+        width: 220px;
+    }
+
+    .encuesta-info{
+        padding: 1rem 2rem 3rem;
+    }
+
+    .titulo-encuesta h1 {
+        text-align: center;
+    }
+
+    .titulo-encuesta h1 strong {
+        font-size: 25px;
+    }
+
+    .subtitulo{
+        padding: 1rem 0 2rem;
+    }
+
+    .encuesta-info .subtitulo h2 {
+        font-size: 22px;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .encuesta-info .radio span {
+        font-size: 16px;
+    }
+
+    .encuesta-info label {
+        font-size: 18px;
+    }
+
+    .encuesta-info .submitContainer-3fPnR button {
+        font-size: 20px;
+    }
+
+    .btn-group a {
+        font-size: 15px;
+    }
+
+    .encuesta-info .img-estrellas img {
+        position: static;
+        width: 170px;
+    }
+
+    .encuesta-info .img-cacahuates img {
+        position: static;
+        width: 325px;
+    }
+
+}
+
+@media(max-width: 480px){
+
+    .seccion-encuesta{
+        background: url('../img/movil-05.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 335vw;
+    }
+
+    .logo-red {
+        padding: 3rem 0 2rem 0;
+    }
+
+    .logo-red img {
+        width: 200px;
+    }
+
+    .encuesta-info{
+        padding: 1rem 2rem 3rem;
+    }
+
+    .titulo-encuesta h1 {
+        text-align: center;
+    }
+
+    .titulo-encuesta h1 strong {
+        font-size: 22px;
+    }
+
+    .subtitulo{
+        padding: 1rem 0 2rem;
+    }
+
+    .encuesta-info .subtitulo h2 {
+        font-size: 22px;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .encuesta-info .radio span {
+        font-size: 15px;
+    }
+
+    .encuesta-info label {
+        font-size: 18px;
+    }
+
+    .encuesta-info .submitContainer-3fPnR button {
+        font-size: 20px;
+    }
+
+    .btn-group a {
+        font-size: 15px;
+    }
+
+    .encuesta-info .img-estrellas img {
+        position: static;
+        width: 170px;
+    }
+
+    .encuesta-info .img-cacahuates img {
+        position: static;
+        width: 325px;
+    }
+
+}
+
+@media(max-width: 392px){
+
+    .seccion-encuesta{
+        height: 355vw;
+    }
+
+}
+
+@media(max-width: 376px){
+
+    .seccion-encuesta{
+        height: 370vw;
+    }
+
+}

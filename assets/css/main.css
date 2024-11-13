@@ -1,0 +1,624 @@
+/*********************************MÓVIL*********************************/
+
+html, body {
+    overflow-x: hidden;
+}
+
+
+/*********************************FONTS*********************************/
+
+@font-face{
+    font-family: 'Din-Black';
+    src: url('../fonts/DINPro-Black.woff2') format('woff2'),
+        url('../fonts/DINPro-Black.woff') format('woff');
+    font-style: normal;    
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: 'Din-Bold';
+    src: url('../fonts/DINPro-Bold.woff2') format('woff2'),
+        url('../fonts/DINPro-Bold.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: 'Din-LightItalic';
+    src: url('../fonts/DINPro-LightItalic.woff2') format('woff2'),
+        url('../fonts/DINPro-LightItalic.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: 'Din-Medium';
+    src: url('../fonts/DINPro-Medium.woff2') format('woff2'),
+        url('../fonts/DINPro-Medium.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: 'Northwest';
+    src: url('../fonts/Northwest.woff2') format('woff2'),
+        url('../fonts/Northwest.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/********************************* LANDING *********************************/
+
+.sin-padding{
+    padding: 0;
+}
+
+.seccion-inicio{
+    position: relative;
+    background: url('../img/fondo-rojo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.seccion-inicio .platillo-uno img{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 13px;
+    left: 4%;
+}
+
+.seccion-inicio .platillo-dos img{
+    position: absolute;
+    width: 350px;
+    height: 300px;
+    bottom: 84px;
+    left: 4%;
+}
+
+.seccion-inicio .platillo-tres img{
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    top: 50px;
+    right: 11%;
+}
+
+.seccion-inicio .platillo-cuatro img{
+    position: absolute;
+    width: 350px;
+    height: 300px;
+    bottom: 4px;
+    right: 8%;
+}
+
+.logo-red{
+    padding: 3rem 0 1rem 0;
+}
+
+.logo-red img{
+    width: 240px;
+}
+
+.titulo-red{
+    padding: 3rem 0;
+}
+
+.titulo-red h1{
+    font-family: 'Northwest';
+    font-size: 80px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.numero-red{
+    padding: 0 14rem 3rem;
+}
+
+.numero-red hr{
+    border: 1px solid #fff;
+    opacity: 1;
+}
+
+.numero-red .numero h2{
+    font-family: 'Din-LightItalic';
+    font-size: 28px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.numero-red .numero h1 a{
+    font-family: 'Northwest';
+    font-size: 70px;
+    color: #fff;
+    text-decoration: none;
+    transition: all .3s linear;
+}
+
+.numero-red .numero h1 a:hover{
+    opacity: .8;
+}
+
+.btn-group {
+    border-radius: var(--bs-border-radius);
+    border: 1px solid #fff;
+}
+
+.btn-group a{
+    font-family: 'Din-Black';
+    font-size: 15px;
+    color: #fff;
+    transition: all .3s linear;
+    text-transform: uppercase;
+}
+
+.btn-group a:hover{
+    background: #fff;
+    color: #E1262C;
+}
+
+
+
+
+/********************************* RESPONSIVO WEB *********************************/
+
+@media(min-width: 1920px){
+
+    .logo-red {
+        padding: 5rem 0 1rem 0;
+    }
+
+    .logo-red img {
+        width: 300px;
+    }
+
+    .titulo-red {
+        padding: 6rem 0;
+    }
+
+    .titulo-red h1 {
+        font-size: 100px;
+    }
+
+    .numero-red {
+        padding: 0 16rem 5rem;
+    }
+
+    .numero-red .numero h2 {
+        font-size: 50px;
+    }
+
+    .numero-red .numero h1 a {
+        font-size: 80px;
+    }
+
+    .btn-group a {
+        font-size: 25px;
+    }
+
+    .seccion-inicio .platillo-uno img {
+        position: absolute;
+        width: 450px;
+        height: 350px;
+        top: 13px;
+        left: 4%;
+    }
+
+    .seccion-inicio .platillo-dos img {
+        position: absolute;
+        width: 510px;
+        height: 400px;
+        bottom: 205px;
+        left: 0%;
+    }
+
+    .seccion-inicio .platillo-tres img {
+        position: absolute;
+        width: 435px;
+        height: 370px;
+        top: 50px;
+        right: 10%;
+    }
+
+    .seccion-inicio .platillo-cuatro img {
+        position: absolute;
+        width: 500px;
+        height: 370px;
+        bottom: 60px;
+        right: 6%;
+    }
+
+}
+
+@media (max-width: 1442px){
+
+    .seccion-inicio {
+        height: 62.5vw;
+    }
+
+    .logo-red {
+        padding: 5rem 0 1rem 0;
+    }
+
+    .logo-red img {
+        width: 240px;
+    }
+
+    .titulo-red {
+        padding: 5rem 0;
+    }
+
+    .titulo-red h1 {
+        font-size: 80px;
+    }
+
+    .numero-red {
+        padding: 0 14rem 4rem;
+    }
+
+    .numero-red .numero h1 a {
+        font-size: 55px;
+    }
+
+    .numero-red .numero h2 {
+        font-size: 26px;
+    }
+
+    .btn-group a {
+        font-size: 18px;
+    }
+
+    .seccion-inicio .platillo-uno img {
+        position: absolute;
+        width: 350px;
+        height: 330px;
+        top: 5px;
+        left: 5%;
+    }
+
+    .seccion-inicio .platillo-dos img {
+        position: absolute;
+        width: 360px;
+        height: 310px;
+        bottom: 150px;
+        left: 2%;
+    }
+
+    .seccion-inicio .platillo-tres img {
+        position: absolute;
+        width: 350px;
+        height: 290px;
+        top: 60px;
+        right: 8%;
+    }
+
+    .seccion-inicio .platillo-cuatro img {
+        position: absolute;
+        width: 370px;
+        height: 310px;
+        bottom: 50px;
+        right: 6%;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+
+    .seccion-inicio {
+        height: 133.5vw;
+    }
+
+    .logo-red {
+        padding: 5rem 0 1rem 0;
+    }
+
+    .logo-red img {
+        width: 260px;
+    }
+
+    .titulo-red {
+        padding: 12rem 0;
+    }
+
+    .titulo-red h1 {
+        font-size: 80px;
+    }
+
+    .numero-red {
+        padding: 0 14rem 8rem;
+    }
+
+    .numero-red .numero h1 a {
+        font-size: 60px;
+    }
+
+    .numero-red .numero h2 {
+        font-size: 30px;
+    }
+
+    .btn-group a {
+        font-size: 18px;
+    }
+
+    .seccion-inicio .platillo-uno img {
+        width: 300px;
+        height: 260px;
+        top: 90px;
+        left: 4%;
+    }
+
+    .seccion-inicio .platillo-dos img {
+        width: 335px;
+        height: 300px;
+        bottom: 141px;
+        left: 2%;
+    }
+
+    .seccion-inicio .platillo-tres img {
+        width: 300px;
+        height: 250px;
+        top: 200px;
+        right: 5%;
+    }
+
+    .seccion-inicio .platillo-cuatro img {
+        width: 350px;
+        height: 290px;
+        bottom: 65px;
+        right: 4%;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+
+    .seccion-inicio {
+        height: 143.9vw;
+    }
+
+    .logo-red {
+        padding: 5rem 0 1rem 0;
+    }
+
+    .logo-red img {
+        width: 260px;
+    }
+
+    .titulo-red {
+        padding: 10rem 0;
+    }
+
+    .titulo-red h1 {
+        font-size: 70px;
+    }
+
+    .numero-red {
+        padding: 0 8rem 6rem;
+    }
+
+    .numero-red .numero h1 a {
+        font-size: 60px;
+    }
+
+    .numero-red .numero h2 {
+        font-size: 30px;
+    }
+
+    .btn-group a {
+        font-size: 18px;
+    }
+
+    .seccion-inicio .platillo-uno img {
+        width: 260px;
+        height: 240px;
+        top: 120px;
+        left: 2%;
+    }
+
+    .seccion-inicio .platillo-dos img {
+        width: 250px;
+        height: 235px;
+        bottom: 15px;
+    }
+
+    .seccion-inicio .platillo-tres img {
+        width: 250px;
+        height: 230px;
+        top: 188px;
+        right: 4%;
+    }
+
+    .seccion-inicio .platillo-cuatro img {
+        width: 260px;
+        height: 220px;
+        bottom: 15px;
+        right: 4%;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 767.65px){
+
+    .seccion-inicio {
+        height: 133.6vw;
+    }
+
+    .logo-red {
+        padding: 4rem 0 1rem 0;
+    }
+
+    .logo-red img {
+        width: 260px;
+    }
+
+    .titulo-red {
+        padding: 7rem 0;
+    }
+
+    .titulo-red h1 {
+        font-size: 65px;
+    }
+
+    .numero-red {
+        padding: 0 8rem 6rem;
+    }
+
+    .numero-red .numero h1 a {
+        font-size: 55px;
+    }
+
+    .numero-red .numero h2 {
+        font-size: 26px;
+    }
+
+    .btn-group a {
+        font-size: 18px;
+    }
+
+    .seccion-inicio .platillo-uno img {
+        width: 225px;
+        height: 225px;
+        top: 90px;
+        left: 2%;
+    }
+
+    .seccion-inicio .platillo-dos img {
+        width: 225px;
+        height: 215px;
+        bottom: 30px;
+        left: 2%;
+    }
+
+    .seccion-inicio .platillo-tres img {
+        width: 200px;
+        height: 190px;
+        top: 175px;
+        right: 4%;
+    }
+
+    .seccion-inicio .platillo-cuatro img {
+        width: 230px;
+        height: 200px;
+        bottom: 25px;
+        right: 4%;
+    }
+
+}
+
+@media(max-width: 480px){
+
+    .seccion-inicio {
+        position: relative;
+        background: url('../img/movil-04.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 216.4vw;
+    }
+
+    .logo-red {
+        padding: 4rem 0 1rem 0;
+    }
+
+    .logo-red img {
+        width: 190px;
+    }
+
+    .titulo-red {
+        padding: 3rem 0 9rem;
+    }
+
+    .titulo-red h1 {
+        font-size: 45px;
+    }
+
+    .numero-red {
+        padding: 0 3rem 5rem;
+    }
+
+    .numero-red .numero h1 {
+        text-align: center;
+    }
+
+    .numero-red .numero h1 a {
+        font-size: 45px;
+    }
+
+    .numero-red .numero h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .btn-group a {
+        font-size: 18px;
+    }
+
+    .seccion-inicio .platillo-uno img {
+        width: 225px;
+        height: 225px;
+        top: 90px;
+        left: 2%;
+    }
+
+    .seccion-inicio .platillo-dos img {
+        width: 225px;
+        height: 215px;
+        bottom: 30px;
+        left: 2%;
+    }
+
+    .seccion-inicio .platillo-tres img {
+        width: 175px;
+        height: 170px;
+        top: 364px;
+        right: 28%;
+    }
+
+    .seccion-inicio .platillo-cuatro img {
+        width: 230px;
+        height: 200px;
+        bottom: 25px;
+        right: 4%;
+    }
+
+}
+
+@media(max-width: 392px){
+
+    .seccion-inicio{
+        height: 216.2vw;
+    }
+
+    .titulo-red{
+        padding: 3rem 0 8rem;
+    }
+
+    .seccion-inicio .platillo-tres img{
+        width: 150px;
+        height: 150px;
+        top: 365px;
+        right: 30%;
+    }
+
+}
+
+@media(max-width: 376px){
+
+    .seccion-inicio{
+        height: 228vw;
+    }
+
+    .titulo-red{
+        padding: 3rem 0 8rem;
+    }
+
+    .seccion-inicio .platillo-tres img{
+        width: 150px;
+        height: 150px;
+        top: 368px;
+        right: 30%;
+    }
+
+}
