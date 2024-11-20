@@ -5,7 +5,7 @@
     "theme_color": "#E1262C",
     "orientation": "portrait",
     "display": "standalone",
-    "start_url": "/?utm_source=web_app_manifest",
+    "start_url": "/Landing-RedTexas?utm_source=web_app_manifest",
     "scope": "./",
     "lang": "es-MX",
     "icons":[
